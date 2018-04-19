@@ -1,0 +1,21 @@
+version: '3'
+services:
+  server:
+    restart: always
+    build: .
+    container_name: reddit-reader-server
+    ports:
+      - "3030:3030"
+      - "9229:9229"
+    command: npm start
+
+  client:
+    build: ./frontend
+    container_name: reddit-reader-client
+    ports:
+      - "3000:3000"
+    links:
+      - server
+    depends_on:
+      - server
+    command: npm start

@@ -1,0 +1,26 @@
+{
+  "name": "reddit-reader-backend",
+  "description": "Socket.io based backend for RedditReader",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src",
+  "keywords": [],
+  "author": {
+    "name": "Bobby Yang",
+    "email": "gaoqing.bobby.yang@gmail.com"
+  },
+  "scripts": {
+    "eslint": "eslint src/. --config .eslintrc.json",
+    "start": "nodemon src/"
+  },
+  "nodemonConfig": {
+    "ignore": ["frontend/*"]
+  },
+  "dependencies": {
+    "socket.io": "^2.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^4.11.0",
+    "nodemon": "^1.12.1"
+  }
+}

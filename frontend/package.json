@@ -1,0 +1,42 @@
+{
+  "name": "reddit-reader",
+  "version": "0.1.0",
+  "author": "Bobby Yang",
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glyif/reddit-reader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/glyif/reddit-reader/issues"
+  },
+  "homepage": "http://localhost:3030/",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "api": "json-server -p 8080 db.json"
+  },
+  "dependencies": {
+    "material-ui": "^0.19.4",
+    "moment": "^2.19.2",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.6",
+    "react-redux-lifecycle": "^2.0.1",
+    "react-scripts": "1.0.13",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "socket.io-client": "^2.0.4",
+    "uniqid": "^4.1.1"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3"
+  },
+  "optionalDependencies": {
+    "fsevents": "^1.1.3"
+  }
+}
